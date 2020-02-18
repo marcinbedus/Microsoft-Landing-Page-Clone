@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.container { 
+    max-width: 68vw;
+    margin: 0 auto;
+}
+
+.main-nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 110px;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+}
+
+.main-nav li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 13px !important;
+}
+
+.fas {
+    color: black;
+}
+
+.nav-icons {
+    display: flex;
+}
+
+.main-nav a:hover{
+    border-bottom: 2px solid black;
+}
+
+.showcase {
+    background: url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
+    align-items: center;
+}
+
+.details *{
+    margin: .3rem;
+}
+
+.details a{
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    background: #262626;
+    color: white !important;
+    text-decoration: none;
+}
+
+.details a i{
+    color: white;
+}
