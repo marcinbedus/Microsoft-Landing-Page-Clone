@@ -10,7 +10,7 @@ body{
 }
 
 .container { 
-    max-width: 68vw;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size: 13px !important;
+    font-size: 13px;
 }
 
 .fas {
@@ -277,10 +277,67 @@ footer ul {
     list-style: none;
 }
 
+.footer-inner li {
+    flex: 1;
+}
+
 footer ul li a{
     font-size: 12px;
     padding: .2rem;
     text-decoration: none;
     color: black;
     margin-left: 20px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links.active {
+    transform: translateX(0);
+    transition: all .2s ease-in-out;
+}
+
+@media (max-width: 890px) {
+    .nav-links {
+        transition: all .2s ease-in-out;
+        transform: translateX(-100%);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 3rem;
+        background: #f2f2f2cc;
+        height: 100vh;
+        width: 50vw;
+        align-items: left;
+    }
+
+    .nav-links a {
+        font-weight: 500;
+        font-size: 16px !important;
+    }
+
+    .nav-links li {
+        padding: .8rem;
+        border-bottom: #ccc solid 1px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .main-nav{
+        justify-content: space-between;
+    }
+
+    .footer-inner {
+        width: 100%;
+    }
 }
